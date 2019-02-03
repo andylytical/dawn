@@ -1,0 +1,37 @@
+/* Defaults */
+/*
+* {
+    margin: 3pt;
+}
+*/
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 16px;*/
+    margin: 0;
+}
+
+h2 {
+    text-decoration: overline underline;
+}
+
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    margin: 3pt;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5pt;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}

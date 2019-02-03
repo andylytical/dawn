@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dawn</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet", type="text/css", href="common.css" />
+</head>
+<body>
+
+<!-- Based on https://www.w3schools.com/css/css3_flexbox.asp -->
+
+<!-- Header -->
+<!--
+<div class="header">
+  <h1>My Website</h1>
+  <p>With a <b>flexible</b> layout.</p>
+</div>
+-->
+
+<!-- Navigation Bar -->
+<!--
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+-->
+
+<!-- The flexible grid (content) -->
+<div class="row">
+    <div class="section">
+        <h2>Personal</h2>
+        <h4><a href="https://www.google.com/calendar?authuser=1">Calendar</a></h4>
+        <h4><a href="https://mail.google.com/mail/u/0/" 
+            onclick="window.open('https://mail.google.com/mail/u/1/');"
+            >Mail
+            </a>
+        </h4>
+        <h4><a href="https://messages.android.com/">Messages</a></h4>
+        <h4><a href="https://trello.com/login">Trello</a></h4>
+        <h4><a href="https://www.wunderground.com/forecast/us/il/champaign"
+            onclick="window.open('https://radar.weather.gov/radar.php?rid=ilx&product=N0R&overlay=11101111&loop=no');"
+            >Weather
+            </a>
+        </h4>
+        <h4><a href="https://app.youneedabudget.com/users/login">YNAB</a></h4>
+            <ul>
+                <li><a href="https://docs.google.com/spreadsheets/d/1bLMPQQ_cQRmOpO2as--bU05voTk4S65-Er-r_RXdf9U/edit">Receipt Worksheet</a></li>
+                <li><a href="https://docs.google.com/spreadsheets/d/1mawTx1NC4fOx1DoNLnqDUqogDwvTaPw0mWZtRd9cL5w/edit">Non-Standard Tax</a></li>
+            </ul>
+        <h4>Google Drive</h4>
+        <ul>
+            <li><a href="https://drive.google.com/drive/u/1/folders/1ehOoKKh6LUulOJGO6fUrEXZZcOBYkIM1">Volleyball 2019</a></li>
+            <li><a href="http://drive.google.com">aloftus</a></li>
+            <li><a href="http://docs.loftuscountry.com">loftuscountry</a></li>
+        </ul>
+        <h4>HCS Musical</h4>
+        <ul>
+            <li><a href="mailto:holycrossmusical@gmail.com">email</a></li>
+            <li><a href="https://hcaddamsfamily.blogspot.com">blog</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Brewday</h2>
+        <h4>Hardware</h4>
+            <ul>
+                <li>
+                    <a href="http://192.168.21.114"
+                        >Guppi - brewstand
+                    </a>
+                </li>
+                <li>
+                    <a href="http://192.168.21.111">Fermenator</a>
+                    <!--
+                    <a href="http://192.168.21.116">(wifi)</a>
+                    -->
+                </li>
+                <li>
+                    <a href="file:///C:/Users/aloftus/Dropbox/Apps/BrewPiBackups/"
+                        >Brewpi - Backups
+                    </a>
+                </li>
+            </ul>
+        <h4>Hops</h4>
+        <ul>
+            <li>
+                <a href="https://www.stonehelm.co.uk/Tools/Alpha-Acid-Calculator"
+                    >Weight Adjustment
+                </a>
+            </li>
+            <li>
+                <a href="http://www.brewerslair.com/index.php?p=brewhouse&d=calculators&id=cal16&u=eng"
+                    >AA Loss Age Adjustment
+                </a>
+            </li>
+            <li>
+                <a href="http://brewerslog.appspot.com/HopAlphaCalc"
+                    >Age Adjustment
+                </a>
+            </li>
+        </ul>
+        <h4>Yeast</h4>
+        <ul>
+            <li>
+                <a href="https://www.homebrewsupply.com/learn/yeast-comparison-charts.html"
+                    >Yeast Comparison Chart
+                </a>
+            </li>
+        </ul>
+        <h4>
+            <a href="https://drive.google.com/drive/u/0/folders/0BzPv8OYR_SirY2ZjYjNkNjYtZjQ5My00ZWNhLThiNDEtZDdjMjZhNThiYWY4"
+                >Google Drive
+            </a>
+        </h4>
+        <ul>
+            <li>
+                <a href="https://drive.google.com/drive/u/0/folders/1d57i-VAQRbCfLDIb9JCHGI3GPBK8cZ4O"
+                    >Brew History
+                </a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/spreadsheets/d/1c8H7tbRQJNC1vC6y37d5l4Vd-7DeWesx1tIzrEDu7pg"
+                    >Brewpi Hardware Configuration
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>NCSA</h2>
+        <h4>
+            <a href="https://outlook.office365.com/owa/?realm=uillinoisedu.onmicrosoft.com&path=/calendar/view/WorkWeek"
+                >Calendar
+            </a>
+        </h4>
+        <h4><a href="https://toggl.com/app/timer"
+            onclick="window.open('https://mail.google.com/mail/u/2/');"
+            >Mail + Toggl</a>
+        </h4>
+        <ul>
+            <li><a href="https://mail.google.com/mail/u/2/">Mail</a>
+            <li><a href="https://toggl.com/app/timer">Toggl</a>
+        </ul>
+        <h4>
+            <a href="https://wiki.ncsa.illinois.edu/display/~aloftus/Home"
+                >Wiki
+            </a>
+        </h4>
+        <ul>
+            <li><a href="https://wiki.ncsa.illinois.edu/display/LSST/LSST+Meeting+Notes"
+                >LSST Meeting Notes
+            </a>
+            </li>
+        </ul>
+       <!-- JIRA -->
+        <h4><a 
+            href="https://jira.ncsa.illinois.edu/secure/RapidBoard.jspa?rapidView=48&quickFilter=102"
+            >JIRA</a>
+        </h4>
+       <!-- SLACK -->
+        <h4><a 
+            href="https://ncsa-at-illinois.slack.com/messages/D6APVDG8N/"
+            onclick="
+                window.open('https://lsstc.slack.com/messages/D2JPCNLAY/');
+            ">Slack</a>
+        </h4>
+        <ul>
+            <li>
+                <a href="https://douglascarmichael.slack.com/messages/DAKMXCT9B/"
+                >DCarmichael</a>
+            </li>
+        </ul>
+        <h4>
+            <a href="http://docs.g.illinois.edu"
+                >Google Drive
+            </a>
+        </h4>
+    </div>
+</div>
+<div class="row">
+    <div class="section">
+        <h2>Extras</h2>
+            <ul>
+                <li><a href="http://depot.lc.net">depot.lc.net</a></li>
+            </ul>
+    </div>
+    <div class="section">
+        <h2>Loftuscountry</h2>
+            <ul>
+                <li><a href="https://admin.google.com/loftuscountry.com/AdminHome">GSuite</a></li>
+                <li><a href="https://domains.google.com/m/registrar/?hl=en#">Domain Registry</a></li>
+                <li><a href="https://login.opendns.com/?return_to=https%3A%2F%2Fdashboard.opendns.com%2F">OpenDNS</a></li>
+            </ul>
+    </div>
+    <div class="section">
+        <h2>Vagrant</h2>
+        <ul>
+            <li>
+                <a href="https://gist.github.com/wpscholar/a49594e2e2b918f4d0c4">
+                    Cheatsheet</a>
+            </li>
+            <li>
+                <a href="https://github.com/ncsa/puppet_deployment/blob/master/scripts/profile.ps1">
+                    Windows Powershell Profile</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Footer -->
+<!--
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+-->
+
+</body>
+</html>
+

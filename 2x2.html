@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2x2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet", type="text/css", href="common.css" />
+<link rel="stylesheet", type="text/css", href="cube.css" />
+</head>
+<body>
+
+<!-- Based on https://www.w3schools.com/css/css3_flexbox.asp -->
+
+<!-- The flexible grid (content) -->
+<div class="row">
+    <div class="section">
+        <h2>2LO</h2>
+        <table>
+            <tr>
+                <td class="td2lo left">
+                    <img src="http://www.rubiksplace.com/images/2x2BeginnersMethod/OLL-1.PNG" />
+                </td>
+                <td class="td2lo right">
+                    <img src="http://www.rubiksplace.com/images/2x2BeginnersMethod/OLL-2.PNG" />
+                </td>
+            </tr>
+            <tr>
+                <td class="td2lo left">R'U' RU' R'U<sup>2</sup> R</td>
+                <td class="td2lo right">LU L'U LU<sup>2</sup> L'</td>
+            </tr>
+            <tr><td colspan="2"><hr></td></tr>
+            <tr>
+                <td class="td2lo left">
+                    <img src="http://www.rubiksplace.com/images/2x2BeginnersMethod/OLL-5.PNG" />
+                </td>
+                <td class="td2lo right">
+                    <img src="http://www.rubiksplace.com/images/2x2BeginnersMethod/OLL-6.PNG" />
+                </td>
+            </tr>
+            <tr>
+                <td class="td2lo left">F (RU R'U') F'</td>
+                <td class="td2lo right">(RU R'U') (R'F RF')</td>
+            </tr>
+            <tr><td colspan="2"><hr></td></tr>
+            <tr>
+                <td class="2lo left">
+                    <img src="http://www.rubiksplace.com/images/2x2BeginnersMethod/OLL-4.PNG" />
+                </td>
+                <td class="2lo right">
+                    <img src="http://www.rubiksplace.com/images/2x2BeginnersMethod/OLL-3.PNG" />
+                </td>
+            </tr>
+            <tr>
+                <td class="td2lo left">F (RU R'U')<sup>2</sup> F'</td>
+                <td class="td2lo right">R<sup>2</sup> U<sup>2</sup> R U<sup>2</sup> R<sup>2</sup></td>
+            </tr>
+            <tr><td colspan="2"><hr></td></tr>
+            <tr>
+                <td class="td2lo" colspan="2">
+                    <img src="http://www.rubiksplace.com/images/2x2BeginnersMethod/OLL-7.PNG" />
+                </td>
+            </tr>
+            <tr>
+                <td class="td2lo" colspan="2">FR U'R' U'RUR' F'</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section">
+        <h2>2LP</h2>
+        <table>
+            <tr>
+                <th class="th2lp">Swap Adjacent</th>
+                <td class="td2lp">
+                    R'-F-R' BB<br />
+                    R-F'-R' BB<br />
+                    R-R-U'
+                </td>
+            </tr>
+            <tr>
+                <th class="th2lp">Swap Diagonal</th>
+                <td class="td2lp">
+                    (swap adjacent)<sup>2</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
+

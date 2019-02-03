@@ -1,0 +1,26 @@
+td.right {
+    border-left: 1px solid gray;
+}
+
+td.left {
+    border-right: 1px solid gray;
+}
+
+td.top {
+    border-top: 1px solid gray;
+}
+
+td.td2lo {
+    padding: 8px;
+    text-align: center;
+}
+
+th.th2lp{
+    padding: 3px;
+    text-align: right;
+}
+
+td.td2lp{
+    padding: 3px;
+    text-align: left;
+}

@@ -1,5 +1,5 @@
-.supply {
-    padding-left: 3em;
+td.supply {
+    text-align:center;
 }
 
 th {
@@ -8,5 +8,18 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #a2a2a2;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.cmd, li::first-letter {
+    border: 1px outset;
+    border-radius: 5px;
+    font-weight: bold;
+    color: red;
+    background-color: white;
 }

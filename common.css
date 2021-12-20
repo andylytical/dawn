@@ -16,6 +16,11 @@ h2 {
     text-decoration: overline underline;
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 
 /* Column container */
 .row {  

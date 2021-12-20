@@ -19,8 +19,8 @@ h2 {
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  padding: 4px;
 }
-
 
 /* Column container */
 .row {  

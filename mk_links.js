@@ -3,7 +3,7 @@ function delay_open_links () {
   var delay_max = 21000;
   var num_links = 30;
   var links_per_phase = 4;
-  var phase_pause = 10 * 60000; //10 minutes in ms
+  var phase_pause = 20 * 60000; //10 minutes in ms
   var url_base = "https://www.bing.com/search?qs=n&form=QBRE&sp=-1&q="
   var search_word;
   var link;

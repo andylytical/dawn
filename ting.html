@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bing Rewards</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="gpw.js"></script>
+<script src="mk_links.js"></script>
+</head>
+<body>
+
+  <h1>Stuff</h1>
+  <div id="console-wrapper" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+    <pre>
+      <div id="console-container"></div>
+    </pre>
+  </div>
+
+  <script>
+    // Override the console.log function to display messages in the webpage
+    ( function() {
+      var oldLog = console.log;
+      var consoleContainer = document.getElementById('console-container');
+      console.log = function(message) {
+        // Display the message in the container
+        consoleContainer.innerHTML += "\n" + message;
+        // Call the original console.log
+        oldLog.apply(console, arguments);
+      };
+    } )();
+
+    // Example console.log statements
+    console.log('CONSOLE\n-------');
+  // You can use this approach for other console methods like console.error, console.warn, etc.
+  </script>
+
+  <script>
+    console.log( "about to call delay_open_links..." );
+    delay_open_links( 20, 0 );
+    console.log( "... after delay_open_links" );
+  </script>
+
+</body>
+</html>

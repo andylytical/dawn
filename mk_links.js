@@ -1,15 +1,14 @@
-function delay_open_links () {
+function delay_open_links ( qty=30, pause=20 ) {
   var delay_min = 10000;
   var delay_max = 21000;
-  var num_links = 30;
   var links_per_phase = 4;
-  var phase_pause = 20 * 60000; //10 minutes in ms
+  var phase_pause = pause * 60000; //10 minutes in ms
   var url_base = "https://www.bing.com/search?qs=n&form=QBRE&sp=-1&q="
   var search_word;
   var link;
   var prev_delay = 0;
   var delay;
-  for (i=0; i < num_links; i++) {
+  for (i=0; i < qty; i++) {
     // make url
     search_word = GPW.pronounceable( rand_int(8, 11) );
     link = url_base + search_word;

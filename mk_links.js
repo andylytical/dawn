@@ -38,7 +38,7 @@ function open_link_in_new_tab( url, index=-1 ) {
   var now = new Date();
   var msg = \
     "["+index+"] " \
-    + now.toLocaleTimeString() 
+    + now.toLocaleTimeString() \
     + ": window.open(" + url + ")";
   console.log( msg );
   window.open( url, "_blank" );

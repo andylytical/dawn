@@ -25,7 +25,7 @@ function delay_open_links ( qty=30, pause=20 ) {
       delay = 0;
     }
     // schedule open new link
-    setTimeout( open_link_in_new_tab, delay, link );
+    setTimeout( open_link_in_new_tab, delay, link, i );
     console.log( "  scheduled in " + delay + " milliseconds" );
     // save last delay
     prev_delay = delay;
@@ -34,9 +34,13 @@ function delay_open_links ( qty=30, pause=20 ) {
 }
 
 
-function open_link_in_new_tab( url ) {
+function open_link_in_new_tab( url, index=-1 ) {
   var now = new Date();
-  console.log( now.toLocaleTimeString() + ": window.open(" + url + ")" );
+  var msg = \
+    "["+index+"] " \
+    + now.toLocaleTimeString() 
+    + ": window.open(" + url + ")";
+  console.log( msg );
   window.open( url, "_blank" );
 }
 

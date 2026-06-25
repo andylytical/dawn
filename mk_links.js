@@ -36,11 +36,7 @@ function delay_open_links ( qty=30, pause=20 ) {
 
 function open_link_in_new_tab( url, index=-1 ) {
   var now = new Date();
-  var msg = \
-    "["+index+"] " \
-    + now.toLocaleTimeString() \
-    + ": window.open(" + url + ")";
-  console.log( msg );
+  console.log( "["+index+"] " + now.toLocaleTimeString() + ": window.open(" + url + ")" );
   window.open( url, "_blank" );
 }
 
